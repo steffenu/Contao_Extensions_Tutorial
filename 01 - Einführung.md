@@ -24,10 +24,8 @@ um z.B :
 - Contao Spezifische Callbacks
 - Custom Controllers
 
-Um unsere Module flexibel zu gestalten mit
+um unsere Module flexibel zu gestalten mit
 der aktuellen Symfony Syntax.
-
-Dann haben wir eine Basis ;).
 
 ### Die OrdnerStruktur
 
@@ -45,8 +43,8 @@ Autoloading ...
 
 Wir werden sie kennen lernen.
 
-Zum jetzigen Zeitpunkt , was sind
-die Ordner die uns interessieren.
+Zum jetzigen Zeitpunkt ...  welche
+ Ordner sind interessant !?
 
     Ressource
       config
@@ -55,35 +53,21 @@ die Ordner die uns interessieren.
       templates
 
 
-Wir erweitern dies später mit Controllern ,
-Models .. the latest shit right ;).
+Wir erweitern diese später mit Controllern ,
+Models .. the latest shit ;).
 
 Contao hat ein "Skeleton Bundle"
 was ich perönlich als "wenig hilfreich" empfand.
 
-Deswegen möchte ich dir mein Eigenes
+Deswegen möchte ich dir mein eigenes
 Skeleton geben.
 
 Dort sind alle 3 Bausteine mit drinne
 und direkt mit Hello World Funktion !
 Content Elemente, Frontend Module ,Backend Module.
 
-
-
-
-
-
-Ich will ich mit diesem Tutorial
-den Fokus auf Extensions legen und
-auch diverse Symfony feinheiten erwähnen bzw  
-direkt mit einbinden. Und nicht nur verlinken :D  
-so nach dem Motto "steht ja irgendwo".
-
 Ich bin PHP Symfony und Contao Neuling.  
-Ohne solide Vorkenntnisse war einiges  
-schwer nachvollziehbar aus der Dokumentation.
-
-Vor allem Beispiele fehlen einfach.
 Wir machen step by step ;)
+
 Hello World !
 

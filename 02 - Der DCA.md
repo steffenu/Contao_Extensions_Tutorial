@@ -6,7 +6,7 @@ Was soll dir das jetzt sagen ?
 
 Der DCA beschreibt :
 
-        1 wie Einträge gelistet werden sollen
+        1 wie Einträge gelistet, sortiert werden sollen
         2 wie backend Formulare gerender werden sollen für diese Einträge
         3 wie diese Einträge bearbeitet werden sollen und gespeichert werden
 
@@ -14,7 +14,7 @@ Der DCA beschreibt :
  **Also ein Container mit Arrays ?**  
  So siehts aus.
 
-**Wie kannst du dir da vorstellen ?** <br>
+**Was für Arrays  ?** <br>
 Gute Frage ! Die wichtigsten Arrays im Container sind:
 
 
@@ -26,9 +26,6 @@ Gute Frage ! Die wichtigsten Arrays im Container sind:
         'fields' => […],
 
     ];
-
-Es ist wichtig das du Ordner so
-wie Contao es vorschreibt benennst.
 
 
 - 1.1 Config
