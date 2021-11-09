@@ -9,7 +9,7 @@ Contao Modul Entwickler !
 - Frontend Module
 - Backend Module
 
- > Stand ``Contao 4.9``
+ > Stand ``Contao 4.11.1``
 
 In den ersten Parts ... Grundlagen ,
 Installation usw.
