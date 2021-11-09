@@ -75,8 +75,8 @@ Offizielle doku(welche regeln müssen eingehalten werden) : https://www.php-fig.
 
 # Contao Konventionen
 
-> Contao hat an mehrenen läd diverse Ordner automatisch
-> oder hat eigens formatierungen.
+> Contao  läd an mehrenen  Stellen diverse Ordner automatisch
+> oder hat eigens Formatierungen.
 
 ## Template Name aus Controller Klasse
 
@@ -157,14 +157,14 @@ composer.json angegeben hast lautet
             "Acme\ContaoHelloWorldBundle": "src/"
         }
 
-Acme = Vendor Name <br>
-HelloWorldBundle= Bundle Name
+Acme = **Vendor Name** <br>
+HelloWorldBundle= **Bundle Name**
 
 aus dem Bundle Namen generiert Contao
 den Namespaced Bundle Name
 
 Welcher  zu <br>
-@ContaoHelloWorld
+`@ContaoHelloWorld`
 
 wird ... ( Vorsicht , der teil "Bundle wird wieder weggeschnitten")
 
@@ -199,3 +199,4 @@ But, with autoconfigure: true, you don't need the tag.
 ## RECAP
 
 - Versch. Optionen um mit psr-4 auto-zu-loaden ;)
+- Contaos Konventionen kennen um Korrekt Pfadangaben zu machen
