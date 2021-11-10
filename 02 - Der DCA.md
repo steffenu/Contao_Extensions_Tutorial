@@ -2,8 +2,6 @@
 
 > DCA steht für Data Array Container.
 
-Was soll dir das jetzt sagen ?
-
 Der DCA beschreibt :
 
         1 wie Einträge gelistet, sortiert werden sollen
@@ -15,7 +13,7 @@ Der DCA beschreibt :
  So siehts aus.
 
 **Was für Arrays  ?** <br>
-Gute Frage ! Die wichtigsten Arrays im Container sind:
+Die wichtigsten Arrays im Container sind:
 
 
     // contao/dca/tl_example.php
@@ -28,21 +26,10 @@ Gute Frage ! Die wichtigsten Arrays im Container sind:
     ];
 
 
-- 1.1 Config
-- 1.2 SQL Relations
-- 1.3 List
-- 1.4 Palettes
-- 1.5 Fields Array
-- 1.6 Evaluation Array
-
-
 A DCA consists of five main parts:
 
     Config
     Configuration of the table itself. ( Configurations  Arten = Table , File , Folder , CustomDriver)
-
-    SQL Configuration
-    The $GLOBALS['TL_DCA']['tl_example']['config']['sql'] part of your DCA configuration allows you to set various SQL properties for your table (and thus is only relevant for the Table data container).
 
     List
     Definition of how records are listed in the back end.
@@ -55,6 +42,22 @@ A DCA consists of five main parts:
 
     Callbacks
     Callbacks within a Data Container Array. ( eigenes Html / Strings oder sonstiges einfügen / funktionen triggern)
+
+
+**Weitere Wichtige Unterthemen**
+
+- 1.1 Config
+  - 1.2 SQL Relations
+- 1.2 List
+  - Operations
+- 1.3 Palettes
+  - Arranging fields
+- 1.4 Fields Array
+  - 1.4.1 Evaluation Array
+- 1.5 Callbacks
+  - Field Callbacks
+
+
 
 
 ---
