@@ -62,6 +62,8 @@ was ich perönlich als "wenig hilfreich" empfand.
 Deswegen möchte ich dir mein eigenes
 Skeleton geben.
 
+Link : 
+
 Dort sind alle 3 Bausteine mit drinne
 und direkt mit Hello World Funktion !
 Content Elemente, Frontend Module ,Backend Module.
