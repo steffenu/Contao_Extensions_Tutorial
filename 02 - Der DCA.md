@@ -29,20 +29,19 @@ Die wichtigsten Arrays im Container sind:
 A DCA consists of five main parts:
 
     Config
-    Configuration of the table itself. ( Configurations  Arten = Table , File , Folder , CustomDriver)
+    Tabellenkonfiguration (Configurations  Arten = Table , File , Folder , CustomDriver)
 
     List
-    Definition of how records are listed in the back end.
+    Wie Einträge im Backend gelistet / sortiert werden
 
     Fields
-    Definition of table columns.
+    Definition der Tabelle Zeilen
 
     Palettes
-    Back end form layout for editing records.
+    Backend Forumular layout
 
     Callbacks
-    Callbacks within a Data Container Array. ( eigenes Html / Strings oder sonstiges einfügen / funktionen triggern)
-
+    Callbacks um an bestimmten stellen eigenen Code auszuführen.
 
 **Weitere wichtige Unterthemen**
 
