@@ -89,6 +89,7 @@ A DCA consists of five main parts:
                 )
             ),
         ),
+        // list
         'list'        => array(
             'sorting'           => array(
                 'mode'        => 2,
