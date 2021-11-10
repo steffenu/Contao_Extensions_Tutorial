@@ -227,6 +227,9 @@ Erstelle eine remote Repository z.B auf Github
 ## Recap
 
 Wir haben die Grundstruktur einer Extension erstellt.
+
 Bis jetzt hat die Extension noch keine Funktion, 
+
 als nächstes machen wir uns auf Content Elemente,Frontend Module
+
 Backend Module usw zu unserer Erweiterung hinzuzufügen.
