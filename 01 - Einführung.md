@@ -43,18 +43,6 @@ Autoloading ...
 
 Wir werden sie kennen lernen.
 
-Zum jetzigen Zeitpunkt ...  welche
- Ordner sind interessant !?
-
-    Ressource
-      config
-      dca
-      languages
-      templates
-
-
-Wir erweitern diese später mit Controllern ,
-Models .. the latest shit ;).
 
 Contao hat ein "Skeleton Bundle"
 was ich perönlich als "wenig hilfreich" empfand.
@@ -68,8 +56,5 @@ Dort sind alle 3 Bausteine mit drinne
 und direkt mit Hello World Funktion !
 Content Elemente, Frontend Module ,Backend Module.
 
-Ich bin PHP Symfony und Contao Neuling.  
-Wir machen step by step ;)
 
-Hello World !
 
