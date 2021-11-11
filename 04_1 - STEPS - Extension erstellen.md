@@ -91,6 +91,8 @@ geben wir den Pfad an aus Schritt 0
 }
 
 
+!!! Wichtiger hinweis
+
 ### Schritt 3
 
 dann `composer update` ausführen. (vorher cd .. damit wir wieder
@@ -223,6 +225,37 @@ Erstelle eine remote Repository z.B auf Github
     $ git remote add origin git@github.com:somevendor/contao-example-bundle.git
     $ git push origin main
 
+
+### Anmerkung
+
+Bei einem composer update 
+werde alle dependencies komplett erneuert.
+
+Sollte dein bundle nicht in der composer.json
+
+registiert sein unter require und
+repository.
+
+dann wird dein Bundle gelöscht sollte es im vendors ordner liegen.
+
+    "require": {
+        "medy/contao-my-test": "1.0",
+        "steffenu/contao-example-bundle": "dev-master"
+    },
+
+
+
+    "repositories": [
+        {
+            "type": "path",
+            "url": "contao-example"
+        },
+
+        {
+            "type": "path",
+            "url": "medy-example"
+        }
+    ]
 
 ## Recap
 
