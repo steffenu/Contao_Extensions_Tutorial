@@ -31,13 +31,14 @@ die Erweiterung. (Praktisch wenn du Bundles von Github runterlädst , und teilst
 ### Vorbereitung
 
 Wir erstellen einen Ordner in unserer Contao Installation z.B
+
 `contao-example`
 
 ### Schritt 1
 
 **Composer Setup**
 
-Im terminal das Verzeichniss wechseln z.B
+Im terminal das in dein Verzeichniss wechseln z.B
 
     cd contao-example
 
@@ -79,7 +80,7 @@ geben wir den Pfad an aus Schritt 0
         "repositories": [
             {
                 "type": "path",
-                "url": "/contao-example/"
+                "url": "contao-example"
             }
         ]
     }
