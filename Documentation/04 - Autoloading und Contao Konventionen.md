@@ -171,30 +171,7 @@ wird ... ( Vorsicht , der teil "Bundle wird wieder weggeschnitten")
 Wo steht das in der Dokumentation ? Frag mich was leichteres :D...
 
 
-    # config/services.yaml
-    services:
-        _defaults:
-            autowire: true
-            autoconfigure: true
-            public: false
-    
-        App\:
-            resource: ../src
-            exclude: ../src/{Entity,Migrations,Model,Resources,Tests,Widget}
-        
-        App\Controller\:
-            resource: ../src/Controller
-            public: true
 
-**autowire**
-
-https://symfony.com/doc/current/service_container.html#the-autowire-option
-
-
-**autoconfigure**
-
-For example, to create a Twig extension, you need to create a class, register it as a service, and tag it with twig.extension.
-But, with autoconfigure: true, you don't need the tag. 
 
 ## RECAP
 

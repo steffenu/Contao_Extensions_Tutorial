@@ -89,3 +89,24 @@
       security:encode-password                Encode a password
      translation
       translation:update                      Update the translation file
+
+
+
+
+## Commands 
+
+docker exec -ti -u www-data dev-env_php72_1 /bin/sh
+
+docker ps
+
+cd contal.loc
+
+vendor/bin/contao-console debug:router
+
+vendor/bin/contao-console cache:clear
+
+composer update
+
+composer dump-autoload -o
+
+rm -rf var/cache
