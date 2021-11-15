@@ -16,6 +16,7 @@
 
 
 https://www.udemy.com/course/symfony-4-web-development-from-beginner-to-advanced/learn/lecture/13666312#overview
+
 **autowire**
 
 https://symfony.com/doc/current/service_container.html#the-autowire-option
@@ -86,11 +87,11 @@ Thanks to this configuration, you can automatically use any classes from the src
             resource: ../../
             exclude: ../../{DependencyInjection,Resources,Model}
     
-Die als nächstes folgende anweisungen sind obsolete.
-Weil wir im oberen Beispiel definert haben das alle 
-klassen in unserem bundle ordner als services genutzt werden können.
+Die folgenden Anweisungen sind obsolet.
+Weil wir im oberen Beispiel definiert haben, das alle 
+Klassen in unserem bundle Ordner als services genutzt werden können.
 
-(dont quote me on this :D )  kann evtl doch Notwending sein
+(don't quote me on this :D )  kann evtl.doch notwendig sein
 für action arguments wie oben beschrieben...)
 
 If your controllers don't extend the AbstractController class, you must explicitly mark your controller services as public
@@ -112,7 +113,8 @@ If your controllers don't extend the AbstractController class, you must explicit
 
 
 Registering your controller as a service is the first step, but you also need to update your routing config to reference the service properly, so that Symfony knows to use it.
-Beispiele : 
+
+**Beispiele** 
     
     # config/routes.yaml
     automation:
