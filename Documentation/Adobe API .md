@@ -1,12 +1,13 @@
 0. Adobe fonts account erstellen
 
 1. Api Key generieren oder vorhandenen nutzen
-	https://fonts.adobe.com/account/tokens
+
+https://fonts.adobe.com/account/tokens
 	
 
 2. fetch kit information ( mit postman zb)
 
-	Header mit schicken 
+	Header mit
 	- X-Typekit-Token
 	- bei value den Api token einsetzen.
 	
@@ -14,7 +15,7 @@
 3. KIT LISTE anfordern ( A list of kits owned by the authenticating user )
 http://typekit.com/api/v1/json/kits
 	
-4. KIT information anfordern 
+4. KIT information anfordern
 https://typekit.com/api/v1/json/kits/ndz7jwu	
     
     RESPONSE :
