@@ -19,11 +19,13 @@ alle nötigen einstellungen treffen und dir selber ein Bundle erstellen ;).
 6. Datenbank aktualisieren mit contao install-tool http://contao.loc/contao/install
 
 
-     "require": {
-        ....
-        ....
-        "steffenu/starter-bundle": "dev-master"
-      },
+
+         "require": {
+            ....
+            ....
+            "steffenu/starter-bundle": "dev-master"
+          },
+
 
 fertig ;)
 
@@ -146,7 +148,7 @@ Todo
         },
 
 
-## Welche variante nutzen ?
+## Welche Variante nutzen?
 
 Für Entwicklung würde ich empfehlen
 
@@ -159,7 +161,6 @@ so die lokalen datein genutzt.
     "repositories": [
         {
             "type": "path",
-            "url": "vendor/steffenu/starter-bundle"
         }
     ]
 
@@ -167,8 +168,8 @@ so die lokalen datein genutzt.
 Du könntest die datein also erstmal über die erste oder zweite 
 variante installieren und danach dann auf `path` umstellen.
 
-füge canonical false hinzu ... weil sonst verlangt
-composer die orginal installierte version via github oder packigist ;):
+füge `canonical false` hinzu ... weil sonst verlangt
+composer die original installierte version via github oder packigist ;):
 
 https://getcomposer.org/doc/articles/repository-priorities.md
     
@@ -184,20 +185,17 @@ https://getcomposer.org/doc/articles/repository-priorities.md
 
 Solltest du nur ein fertiges Paket nutzen wollen
 dann benutze die packigist variante(am einfachsten) ,
-ansonsten mit Github via `vcs` Einstellung.
+ansonsten die Github Variante.
 
 
-Tipp :
-mein starter bundle liegt auf Packigist 
+Tipp:
+Mein starter bundle liegt auf Packigist 
 
 du kannst es also einfach so requiren :
 
     "steffenu/starter-bundle": "dev-master"
 
 oder über github wie oben beschrieben ;)...
-
-
-soll
 
 
 

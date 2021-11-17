@@ -28,12 +28,74 @@ Makes this obsolete -->
         arguments:
             $second_service: '@App\Services\MysecondService'
 
+ With this setting, you're able to `type-hint` arguments in the __construct() method of your services and the container will automatically pass you the correct arguments. 
+    
+    // type-hint
+    public function __construct(TwigEnvironment $twig)
+
+
+Wenn autowire in der defaults section auf true ist 
+
+    services:
+      _defaults:
+        autowire: true
+
+dann wird es auf allen services in der Datei angewandt
+
+
+**ohne autowire**
+
+Ohne Autowiring funktionert  `type-hint` nicht.
+
+Wir müssen also manuell unserem Service konfigurieren:
+
+
+
+`Prior to Symfony 3.3`, all services and (typically) arguments were explicitly configured: it was not possible to load services automatically and autowiring was much less common.
+
+Both of these features are optional. And even if you use them, there may be some cases where you want to manually wire a service. For example, suppose that you want to register 2 services for the SiteUpdateManager class - each with a different admin email. In this case, each needs to have a unique service id:
+
+
+
+    # config/services.yaml
+    services:
+        # ...
+    
+        # this is the service's id
+        site_update_manager.superadmin:
+            class: App\Service\SiteUpdateManager
+            # you CAN still use autowiring: we just want to show what it looks like without
+            autowire: false
+            # manually wire all arguments
+            arguments:
+                - '@App\Service\MessageGenerator'
+                - '@mailer'
+                - 'superadmin@example.com'
+
+
+        site_update_manager.normal_users:
+            class: App\Service\SiteUpdateManager
+            autowire: false
+            arguments:
+                - '@App\Service\MessageGenerator'
+                - '@mailer'
+                - 'contact@example.com'
+    
+        # Create an alias, so that - by default - if you type-hint SiteUpdateManager,
+        # the site_update_manager.superadmin will be used
+        App\Service\SiteUpdateManager: '@site_update_manager.superadmin'
+
+: Manually Wiring : https://symfony.com/doc/current/service_container.html#services-wire-specific-service
+
 **autoconfigure**
 
 For example, to create a Twig extension, you need to create a class, register it as a service, and tag it with twig.extension.
 But, with autoconfigure: true, you don't need the tag. 
 
 Automaticlly registers yours services as commands , event subscribers, etc
+
+
+
 
 
 **public**
