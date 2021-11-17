@@ -35,3 +35,15 @@ und dafür einen neuen Branch zum Master machen
     git checkout -b widget
     
     git push origin widget
+
+
+---
+
+# Neues Repo / Branch adden
+
+git init
+git add .
+git commit -m "update"
+git remote add origin https://github.com/steffenu/contao-example-bundle
+git checkout -b starter
+git push origin starter
