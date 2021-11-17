@@ -27,10 +27,16 @@ alle nötigen einstellungen treffen und dir selber ein Bundle erstellen ;).
 
 fertig ;)
 
+ps : dev-master oder dev- main je nachdem wie dein haupt branch 
+bei github heisst ;)
+
+![](https://i.imgur.com/Ww4AB32.png)
+
 ## Installation via Github
 
 **Anmerkung**
-deinen bundle Namen den du später in der Require Sektion eintragen musst 
+
+Deinen bundle Namen den du später in der Require Sektion eintragen musst 
 findest du in deiner composer.json von deinem bundle
 
     "name": "steffenu/starter-bundle",
@@ -39,6 +45,7 @@ Aufpassen das du das nicht mit deinem github repo namen verwechselst ;).
 Idealerweise sind beide gleich.
 
 Mein github repo heisst : https://github.com/steffenu/contao-starter-bundle
+
 Aber der name des Bundles ist : starter-bundle ;)
 
 in der root composer.json
@@ -68,7 +75,8 @@ Danach via Contao Manager ein vollständige Update durchführen und das Installt
 
 
 
-Bei Variante B kann es sein, dass github.com die Verbindungsanfrage ablehnt. Die Erstellung eines Oauth-Access-Tokens kann hier Abhilfe schaffen. Das Access Token muss dann in der config section der composer.json im Root eingesetzt werden. Github Oauth-Access-Token generieren
+Bei dieser Variante kann es sein, dass github.com die Verbindungsanfrage ablehnt. Die Erstellung eines Oauth-Access-Tokens kann hier Abhilfe schaffen. Das Access Token muss dann in der config section der composer.json im Root eingesetzt werden. Github Oauth-Access-Token generieren
+
 https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
        "config": {
@@ -88,9 +96,9 @@ https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/c
 2. Verlinkung auf Lokalen Pfad [OPTION 1] 
 
 Du kannst direkt dein bundle in das Vendor Verzeichniss packen.
-Du kannst aber auch die Dateien in irgendeinen ordner packen.
-Contao "Symlinked" dann diesen Ordner mit dem vendor Verzeichnisse
-und smit landen die dateien dann auch im vendor ordner
+Du kannst aber auch die Dateien in irgendeinen Ordner packen.
+Contao "Symlinked" dann diesen Ordner mit dem vendor Verzeichniss
+und damit landen die Dateien dann auch im vendor Ordner.
 
     vendor
         steffenu
@@ -136,4 +144,60 @@ Todo
                 "": "src/"
             }
         },
+
+
+## Welche variante nutzen ?
+
+Für Entwicklung würde ich empfehlen
+
+das die Pfadangabe über type `path` gesetzt ist.
+
+Denn bei einem Composer update werden 
+so die lokalen datein genutzt.
+
+
+    "repositories": [
+        {
+            "type": "path",
+            "url": "vendor/steffenu/starter-bundle"
+        }
+    ]
+
+
+Du könntest die datein also erstmal über die erste oder zweite 
+variante installieren und danach dann auf `path` umstellen.
+
+füge canonical false hinzu ... weil sonst verlangt
+composer die orginal installierte version via github oder packigist ;):
+
+https://getcomposer.org/doc/articles/repository-priorities.md
+    
+    "repositories": [
+        {
+            "type": "path",
+            "url": "vendor/steffenu/starter-bundle",
+            "canonical": false
+        }
+    ]
+   
+
+
+Solltest du nur ein fertiges Paket nutzen wollen
+dann benutze die packigist variante(am einfachsten) ,
+ansonsten mit Github via `vcs` Einstellung.
+
+
+Tipp :
+mein starter bundle liegt auf Packigist 
+
+du kannst es also einfach so requiren :
+
+    "steffenu/starter-bundle": "dev-master"
+
+oder über github wie oben beschrieben ;)...
+
+
+soll
+
+
 
