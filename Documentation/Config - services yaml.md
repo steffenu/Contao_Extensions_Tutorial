@@ -85,7 +85,7 @@ Both of these features are optional. And even if you use them, there may be some
         # the site_update_manager.superadmin will be used
         App\Service\SiteUpdateManager: '@site_update_manager.superadmin'
 
-: Manually Wiring : https://symfony.com/doc/current/service_container.html#services-wire-specific-service
+Manually Wiring : https://symfony.com/doc/current/service_container.html#services-wire-specific-service
 
 **autoconfigure**
 
@@ -193,3 +193,51 @@ Registering your controller as a service is the first step, but you also need to
         path:     /hello
         controller: App\Controller\HelloController::index
         methods: GET
+
+
+
+## Autowiring Manuell und Service Tagging
+
+`arguments` : zum manuellen wiring von services
+
+`tags` - Service tags are a way to tell Symfony or other third-party bundles that your service should be registered in some special way.
+
+    # Custom route
+    Steffenu\StarterBundle\Classes\Options:
+        arguments: ['@http_client']
+        tags:
+            - { name: container.service_subscriber }
+        public: true
+        # Since Symfony 5 the container has to be set manually
+        calls:
+            - [ setContainer, [ '@Psr\Container\ContainerInterface' ] ]
+
+
+## Autoconfiguring Tags
+
+    # config/services.yaml
+    services:
+        # this config only applies to the services created by this file
+        _instanceof:
+            # services whose classes are instances of CustomInterface will be tagged automatically
+            App\Security\CustomInterface:
+                tags: ['app.custom_tag']
+        # ...
+
+
+## Importing Many Services at once with resource
+
+
+    # config/services.yaml
+    services:
+        # ... same as before
+    
+        # makes classes in src/ available to be used as services
+        # this creates a service per class whose id is the fully-qualified class name
+        App\:
+            resource: '../src/*'
+            exclude: '../src/{DependencyInjection,Entity,Tests,Kernel.php}'
+
+
+This can be used to quickly make many classes available as services and apply some default configuration. The id of each service is its fully-qualified class name. You can override any service that's imported by using its id (class name) below (e.g. see Service Container). If you override a service, none of the options (e.g. public) are inherited from the import (but the overridden service does still inherit from _defaults).
+
