@@ -28,6 +28,19 @@ https://github.com/av01d/fontpicker-jquery-plugin
 
 **Get @font-face css snippets**
 
+### Adobe
+
+3. KIT LISTE anfordern ( A list of kits owned by the authenticating user )
+http://typekit.com/api/v1/json/kits
+	
+4. KIT information anfordern
+https://typekit.com/api/v1/json/kits/ndz7jwu
+
+6. Die KIT Id in diesen link einsetzen und Font face CSS zu code erhalten
+https://use.typekit.net/ndz7jwu.css
+
+### Google
+
 ## Schritt 4
 
 **Apply Font Face CSS to  HTML`<head>`

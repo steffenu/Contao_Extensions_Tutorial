@@ -18,6 +18,7 @@ http://typekit.com/api/v1/json/kits
 4. KIT information anfordern
 https://typekit.com/api/v1/json/kits/ndz7jwu	
     
+
     RESPONSE :
     
     {
@@ -194,7 +195,7 @@ https://typekit.com/api/v1/json/families/qhhz
 
 
 
-6. Die Id in diesen link einsetzen
+6. Die Id in diesen link einsetzen und Font face code erhalten
 https://use.typekit.net/ndz7jwu.css
 
 
