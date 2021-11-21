@@ -14,14 +14,14 @@ Müssen diese dies explizit erlauben.
 
 MIt dem ``Access-Control-Allow-Origin`` header.
 
-Dort kann der Api betreiber zb die wildcard *  eintragen um alle Origins zu erlauben.
+Dort kann der Api betreiber zb die wildcard * eintragen, um alle Origins zu erlauben.
 Oder nur bestimmte urls wie meineseite.de.
 
-Public apis ohne autnentifizierung sind oftmals offen und problemlos
+Public apis ohne Authentifizierung sind oftmals offen und problemlos
 via javscript auf der seite benutzbar.
 
 Man will halt nicht das jedes dahergelaufene script  
- zugriff hat / requests machen kann.
+Zugriff hat /Requests machen kann.
 
 
 
