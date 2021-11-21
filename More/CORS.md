@@ -23,5 +23,6 @@ via javscript auf der seite benutzbar.
 Man will halt nicht das jedes dahergelaufene script  
 Zugriff hat /Requests machen kann.
 
+Browser haben standarmässig cors eingebaut.
 
 
