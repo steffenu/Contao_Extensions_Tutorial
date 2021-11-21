@@ -42,6 +42,23 @@ Wenn autowire in der defaults section auf true ist
 
 dann wird es auf allen services in der Datei angewandt
 
+Empfohlen zum durchlesen : https://symfony.com/doc/current/service_container/autowiring.html#an-autowiring-example
+
+
+**Optional methods aufrufen**
+
+Normalerweise nutzt du den construktur.
+Aber es ist auch möglich weitere methoden auzuführern
+wenn die klasse initilaisiert wird.
+
+das geht einmal über autowiring mit dem ``required`` annotation tag : https://symfony.com/doc/current/service_container/autowiring.html#autowiring-other-methods-e-g-setters-and-public-typed-properties
+
+oder über service method calls : https://symfony.com/doc/current/service_container/calls.html
+
+https://symfony.com/doc/current/service_container/autowiring.html#an-autowiring-example
+
+>> Interessant um zb einen Optionalen Logger auszuführen über die config
+
 
 **ohne autowire**
 
@@ -157,7 +174,9 @@ Klassen in unserem bundle Ordner als services genutzt werden können.
 für action arguments wie oben beschrieben...)
 
 If your controllers don't extend the AbstractController class, you must explicitly mark your controller services as public
-   
+
+When using controllers as services and taking advantage of dependency injection, the controller’s service needs to be set to public or be tagged with the controller.service_arguments tag.
+
     # controllers are imported separately to make sure services can be injected
     # as action arguments even if you don't extend any base controller class
     App\Controller\:
@@ -212,6 +231,14 @@ Registering your controller as a service is the first step, but you also need to
         calls:
             - [ setContainer, [ '@Psr\Container\ContainerInterface' ] ]
 
+
+# config/services.yaml
+services:
+    # ... same code as before
+
+    # explicitly configure the service
+    App\Service\PublicService:
+        public: true
 
 ## Autoconfiguring Tags
 
