@@ -16,63 +16,34 @@ https://github.com/av01d/fontpicker-jquery-plugin
 
 ### Schritt 1
 
-**Font List from API**
+**Get Kit Names from API[Backend]**
 
+### Adobe
+
+1.KIT LISTE anfordern ( A list of kits owned by the authenticating user )
+http://typekit.com/api/v1/json/kits
+	
+2.KIT information anfordern
+https://typekit.com/api/v1/json/kits/ndz7jwu
+
+3.Die KIT Id in diesen link einsetzen und Font face CSS zu code erhalten
+https://use.typekit.net/ndz7jwu.css
 
 ## Schritt 2
 
-** Font List einfügen in Dropdown**
+** Kit Names in erstes Dropdown einfügen**
 
 
 ## Schritt 3
 
-**Get @font-face css snippets**
+**Schriften (Fontface CSS) von ausgewählten Kit in Header einfügen** ['Javscript']
 
-### Adobe
-
-3. KIT LISTE anfordern ( A list of kits owned by the authenticating user )
-http://typekit.com/api/v1/json/kits
-	
-4. KIT information anfordern
-https://typekit.com/api/v1/json/kits/ndz7jwu
-
-6. Die KIT Id in diesen link einsetzen und Font face CSS zu code erhalten
-https://use.typekit.net/ndz7jwu.css
-
-### Google
+(Keine Duplicate im Header erzeugen)
 
 ## Schritt 4
 
-**Apply Font Face CSS to  HTML`<head>`
-
-![](https://i.imgur.com/7rc64yw.png)
-
-
-## Schritt 5
-
-**Apply `id` to each item**
-
-![](https://i.imgur.com/lbnTmrZ.png)
-
-
-## Schritt 6
-
-**Apply font family to iD's via  HTML`<head>`
-
-
-![](https://i.imgur.com/Tt7yZbX.png)
-
-
-**Zusammenfassung**
-
-1. Font liste holen
-2. Liste in Dropdown einfügen
-3. Css snippets für den jeweiligen font Face von Api holen
-4. Font Faces Css einbinden im <head>
-5. Jedem Item eine Id vergeben
-6. Im <head> die font families den ids hinzufügen über CSS
-
-
+**Zweiten Dropdown mit Schriftarten befüllen** ['Javscript']
+- Optionen löschen und neue einfügen.
 
 
 ## Test Code
