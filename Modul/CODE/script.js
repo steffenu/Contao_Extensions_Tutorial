@@ -195,14 +195,37 @@ async function app() {
   let fonts = new Fonts();
   console.log("fonts:", fonts);
 
+  // Response in ein Public field packen zur weiterverwendung
   fonts.public_kit_objects = await fonts.KitObjects();
   console.log("public kit_objects:", fonts.public_kit_objects);
 
-  var child_nodes = document.getElementById("ctrl_checkboxField").childNodes;
+  var child_nodes_h1 = document.getElementById("ctrl_heading_1").childNodes;
+  var child_nodes_h2 = document.getElementById("ctrl_heading_2").childNodes;
+  var child_nodes_h3 = document.getElementById("ctrl_heading_3").childNodes;
+  var child_nodes_h4 = document.getElementById("ctrl_heading_4").childNodes;
+  var child_nodes_h5 = document.getElementById("ctrl_heading_5").childNodes;
+  var child_nodes_h6 = document.getElementById("ctrl_heading_6").childNodes;
+  var child_nodes_paragraph =
+    document.getElementById("ctrl_paragraph").childNodes;
+  var child_nodes_strong = document.getElementById("ctrl_strong").childNodes;
+
+  let nodes = [
+    child_nodes_h1,
+    child_nodes_h2,
+    child_nodes_h3,
+    child_nodes_h4,
+    child_nodes_h5,
+    child_nodes_h6,
+    child_nodes_paragraph,
+    child_nodes_strong,
+  ];
 
   fonts.ApplyFontFaceCSS();
 
-  fonts.AddFontFamilies(child_nodes);
+  for (const item of nodes) {
+    fonts.AddFontFamilies(item);
+  }
+
   /*   all_kits = await new_kit.KitIds();
   console.log(all_kits, "all kits");
 
@@ -215,11 +238,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   // Nur auf der bearbeitungsseite das script starten ;)
   // sonst läuft es in der listenansischt ;)
-  if (document.getElementById("ctrl_checkboxField")) {
+  if (document.getElementById("ctrl_selectField")) {
     app();
   } else {
     console.log("Listenansicht , kein Script Start");
   }
+
+  // FONT Picker auf Input Felder anwenden.
+  $("#ctrl_heading_1").fontpicker();
+  $("#ctrl_heading_2").fontpicker();
+  $("#ctrl_heading_3").fontpicker();
+  $("#ctrl_heading_4").fontpicker();
+  $("#ctrl_heading_5").fontpicker();
+  $("#ctrl_heading_6").fontpicker();
+  $("#ctrl_paragraph").fontpicker();
+  $("#ctrl_strong").fontpicker();
+  //$("input#ctrl_unique_url").fontpicker();
 });
 
 /*

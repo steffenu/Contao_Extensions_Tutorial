@@ -96,6 +96,31 @@ https://use.typekit.net/ndz7jwu.css
       });
 
 
+---
+
+# Phase 2
+
+## Schritt 1
+
+**Alle HTML Felder**
+
+h1 - h6 
+<p>
+<strong>
+
+
+'10', '1637673946', 'Maennerhobby', 'Bebas Neue Pro', '', NULL
+
+
+## Schritt 2
+
+**Backend Routen mit HTML Felder**
 
 
 
+## TODO
+
+- Google Api
+- Font Weight option
+- Font Upload Option
+- Download Buttons im Template zum downloaden der Schriften
