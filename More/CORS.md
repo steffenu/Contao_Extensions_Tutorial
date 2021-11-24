@@ -10,7 +10,7 @@ We do not offer the configuration of these headers as a service, so any browser-
 ### Fazit
 
 Solltest du via Javscript was im Browser läuft auf **externe** API's zugreifen.
-Müssen diese dies explizit erlauben.
+Müssen diese es explizit erlauben.
 
 MIt dem ``Access-Control-Allow-Origin`` header.
 
