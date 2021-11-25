@@ -25,3 +25,17 @@ https://developer.mozilla.org/de/docs/Web/API/Document/createDocumentFragment
 - classes are syntactic sugar
 
 https://developer.mozilla.org/de/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
+
+
+
+###
+**Google**
+As of November 2021, Google Fonts had 1291 font families, including 182 variable font families.
+
+
+**Adobe**
+
+3665
+
+http://typekit.com/api/v1/json/libraries/full?per_page=100
+(wird unter pagination count angezeigt) 

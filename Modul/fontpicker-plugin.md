@@ -3,6 +3,8 @@
 
 https://github.com/av01d/fontpicker-jquery-plugin
 
+Usage : https://av01d.github.io/fontpicker-jquery-plugin/index.html
+
 
 ![](https://i.imgur.com/rgC1CXI.png)
 
