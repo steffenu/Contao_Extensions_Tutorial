@@ -1,4 +1,11 @@
 # 
+e3aa7e3d04c691e2cf0326efa59f6f82fa2876ac
+
+Die Bibliothek Fontpicker hat
+sich folgendes Format erstellt aus der Google Api Response
+
+Wir müssen schauen das wir dieses nachkonstruieren aus der Adobe Api
+welche es uns natürlich nich so leicht macht und uns alle werte genauso liefert.
 
 
     var __adobeFonts = {
@@ -296,7 +303,7 @@ Dies ist das Object was wir befüllen müssen aus der Adobe Api
 
 Die `variants: "400,400i",` müssen generiert werden
 
-dazu können theoretisch die werden  aus `fvd`   `n1` oder `i1`
+dazu können theoretisch die Werte  aus `fvd`   `n1` oder `i1`
 genutzt werden.
 
     var __adobeFonts = {
@@ -308,18 +315,20 @@ genutzt werden.
 Über den erstellten Endpunkt ``@Route("/contao/api/variations/{font_id}",``
 können wir uns alle Variation Abkürzungen ausgeben lassen.
 
-OUTPUT:
-array('n3', 'i3', 'n4', 'i4', 'n5', 'i5', 'n7', 'i7', 'n8', 'i8')
+    OUTPUT:
+    array('n3', 'i3', 'n4', 'i4', 'n5', 'i5', 'n7', 'i7', 'n8', 'i8')
 
 diese können wir dann entweder umwandeln
     
     n3 = 300 oder i3 =300i
 
 oder nochmal einen weiteren request machen für jede
-einzelne variation. [ist evtl sicherer]
+einzelne variation. `[ist evtl sicherer]`
 
 weil für das umwandeln bräuchte man eine vorgefertigte übersetzung
-sprich n = normal  oder i = italic ... 
+
+    sprich n = normal  oder i = italic ... 
+
 sofern aber andere buchstaben hinzukommen ... ? können fehler entstehen
 evtl ändert sich da aber nichts ;).
 
