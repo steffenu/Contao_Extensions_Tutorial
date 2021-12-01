@@ -346,3 +346,187 @@ mit ``latin`` sollte der standartfall abgedeckt werden
         variants: "400,400i",
         subsets: "latin",
       },
+
+
+
+### Zusamenfassung
+
+
+0. Selected Kit aus DOM finden
+
+
+
+1.aus kitobject liste das kit mit selected matchen
+
+
+
+
+2. Kitfonts abrufen http://contao.loc/contao/api/kitfonts/ndz7jwu
+
+        [
+        "qhhz",
+        "vmnk"
+        ]
+
+For every Font
+2. Get Font info Route("/contao/api/family/qhhz
+
+
+      {
+          "family": {
+              "id": "qhhz",
+              "name": "Bebas Neue Pro",
+              "slug": "bebas-neue-pro",
+              "web_link": "http://typekit.com/fonts/bebas-neue-pro",
+              "browse_info": {
+                  "capitals": [
+                      "uppercase-lowercase"
+                  ],
+                  "classification": [
+                      "sans-serif"
+                  ],
+                  "contrast": [
+                      "low"
+                  ],
+                  "language": [],
+                  "number_style": [
+                      "uppercase"
+                  ],
+                  "recommended_for": [
+                      "headings",
+                      "paragraphs"
+                  ],
+                  "weight": [
+                      "heavy",
+                      "light",
+                      "regular"
+                  ],
+                  "width": [
+                      "condensed"
+                  ],
+                  "x_height": [
+                      "high"
+                  ]
+              },
+              "css_stack": "sans-serif",
+              "description": null,
+              "foundry": {
+                  "name": "Dharma Type",
+                  "slug": "dharma-type"
+              },
+              "libraries": [
+                  {
+                      "id": "full",
+                      "link": "/api/v1/json/libraries/full",
+                      "name": "Full Library"
+                  }
+              ],
+              "variations": [
+                  {
+                      "id": "qhhz:n1",
+                      "link": "/api/v1/json/families/qhhz/n1",
+                      "name": "Bebas Neue Pro Thin",
+                      "fvd": "n1"
+                  },
+                  {
+                      "id": "qhhz:i1",
+                      "link": "/api/v1/json/families/qhhz/i1",
+                      "name": "Bebas Neue Pro Thin Italic",
+                      "fvd": "i1"
+                  },
+                  {
+                      "id": "qhhz:n2",
+                      "link": "/api/v1/json/families/qhhz/n2",
+                      "name": "Bebas Neue Pro Light",
+                      "fvd": "n2"
+                  },
+                  {
+                      "id": "qhhz:i2",
+                      "link": "/api/v1/json/families/qhhz/i2",
+                      "name": "Bebas Neue Pro Light Italic",
+                      "fvd": "i2"
+                  },
+                  {
+                      "id": "qhhz:n3",
+                      "link": "/api/v1/json/families/qhhz/n3",
+                      "name": "Bebas Neue Pro Book",
+                      "fvd": "n3"
+                  },
+                  {
+                      "id": "qhhz:i3",
+                      "link": "/api/v1/json/families/qhhz/i3",
+                      "name": "Bebas Neue Pro Book Italic",
+                      "fvd": "i3"
+                  },
+                  {
+                      "id": "qhhz:n4",
+                      "link": "/api/v1/json/families/qhhz/n4",
+                      "name": "Bebas Neue Pro Regular",
+                      "fvd": "n4"
+                  },
+                  {
+                      "id": "qhhz:i4",
+                      "link": "/api/v1/json/families/qhhz/i4",
+                      "name": "Bebas Neue Pro Italic",
+                      "fvd": "i4"
+                  },
+                  {
+                      "id": "qhhz:n5",
+                      "link": "/api/v1/json/families/qhhz/n5",
+                      "name": "Bebas Neue Pro Middle",
+                      "fvd": "n5"
+                  },
+                  {
+                      "id": "qhhz:i5",
+                      "link": "/api/v1/json/families/qhhz/i5",
+                      "name": "Bebas Neue Pro Middle Italic",
+                      "fvd": "i5"
+                  },
+                  {
+                      "id": "qhhz:n6",
+                      "link": "/api/v1/json/families/qhhz/n6",
+                      "name": "Bebas Neue Pro Bold",
+                      "fvd": "n6"
+                  },
+                  {
+                      "id": "qhhz:i6",
+                      "link": "/api/v1/json/families/qhhz/i6",
+                      "name": "Bebas Neue Pro Bold Italic",
+                      "fvd": "i6"
+                  }
+              ]
+          }
+      }
+
+4. Font Variations Route("/contao/api/variations/{qhhz}
+
+
+      {
+      "variation": {
+      "id": "qhhz:n1",
+      "name": "Bebas Neue Pro Thin",
+      "family": {
+      "id": "qhhz",
+      "link": "/api/v1/json/families/qhhz",
+      "name": "Bebas Neue Pro"
+      },
+      "font_style": "normal",
+      "font_variant": "normal",
+      "font_weight": "100",
+      "foundry": {
+      "name": "Dharma Type",
+      "slug": "dharma-type"
+      },
+      "libraries": [
+      {
+      "id": "full",
+      "link": "/api/v1/json/libraries/full",
+      "name": "Full Library"
+      }
+      ],
+      "postscript_name": "BebasNeuePro-Thin"
+      }
+      }
+
+
+5. 
