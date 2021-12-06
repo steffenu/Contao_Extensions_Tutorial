@@ -110,3 +110,5 @@ composer update
 composer dump-autoload -o
 
 rm -rf var/cache
+
+vendor/bin/contao-console cache:pool:prune  (HOLZHAMMER METHODE ;)
