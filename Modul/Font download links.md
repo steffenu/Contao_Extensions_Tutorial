@@ -4,7 +4,7 @@
 Ziel ist es aus den Apis Responses von Google und Adobe 
 Die dowloadable fonts links zu extrahieren.
 
-
+https://xd.adobe.com/view/7637fc4b-8d07-436d-a25b-6b0ca8d3cfaa-2364/screen/c3a30ccf-cb2c-4035-877b-b6e0c7a37733/specs/
 
 
 ## Adobe
@@ -54,7 +54,7 @@ Alle google Fonts : https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyAV
 
 
 ### Schritt 2
-Roboto wählen und variants bekommen
+Gesuchten Font  wählen z.B Roboto und variants bekommen
 
 
      "family": "Roboto",
