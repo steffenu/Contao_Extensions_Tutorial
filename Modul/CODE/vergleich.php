@@ -249,6 +249,7 @@ class MyCustomController extends AbstractController
 
 
         $FontArray = [];
+        $FontArray_Google = [];
         dump('kitobject_families');
         dump($kitobject_families);
         foreach ($kitobject_families as $key => $value) {
@@ -275,7 +276,7 @@ class MyCustomController extends AbstractController
             }
 
         }
-/*         foreach ($kitobject_families as $key => $value) {
+        foreach ($kitobject_families as $key => $value) {
 
 
 
@@ -294,14 +295,16 @@ class MyCustomController extends AbstractController
 
 
 
-                array_push($FontArray, $Listitems);
+                array_push($FontArray_Google, $Listitems);
             }
             // GOOGLE FONT
 
 
 
 
-        } */
+        }
+        dump('FontArray_Google');
+        dump($FontArray_Google);
         return $FontArray;
 
 
