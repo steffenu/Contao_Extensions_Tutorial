@@ -45,6 +45,8 @@ Die download links für jede font weight finden wir hier ...
 
 ## Google
 
+Webfonts Helper Api : https://google-webfonts-helper.herokuapp.com/api/fonts/advent-pro?download=zip&subsets=latin&variants=500,700,regular
+
 https://fonts.googleapis.com/css?family=Advent%20Pro
 
 
