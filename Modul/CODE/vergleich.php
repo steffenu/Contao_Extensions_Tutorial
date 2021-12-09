@@ -108,15 +108,25 @@ class MyCustomController extends AbstractController
                     dump('INPUT : ' . $fontname);
 
 
-                    // CREATE FONT ARRAY FUNCTION
-                    $FontValuesArray = $this->createFontArray($kitobject_families,$fontname,$font_weight);
+                    // Pushes only Adobe Fonts (Fonts from kitobject_families)
+                    $AdobeArray = $this->FontArrayAdobe($kitobject_families , $fontname ,$font_weight);
 
+                    if (!empty($AdobeArray)) {
+                        array_push($arrListitems, $AdobeArray);
+                    }
+
+                    // Pushes only google fonts (fonts not included in kitobject_families)
+                    $GoogleArray = $this->createFontArray($arrListitems,$fontname,$font_weight);
+
+                    if (!empty($GoogleArray)) {
+                        array_push($arrListitems, $GoogleArray);
+                    }
 
                     dump("## OUTPUT ##");
                     dump($FontValuesArray);
                     //dump($Listitems);
 
-                    array_push($arrListitems, $FontValuesArray);
+
 
                     // key value pair
                     //$new_html[$html_tags_keys[$index]] = $Listitems;
@@ -245,13 +255,43 @@ class MyCustomController extends AbstractController
     // Needs Css name from KitObject
     */
 
-    public function createFontArray($kitobject_families , $fontname ,$font_weight){
+
+    public function FontArrayGoogle($arrListitems , $fontname ,$font_weight){
 
 
-        $FontArray = [];
+        // fontname Interstate
         $FontArray_Google = [];
-        dump('kitobject_families');
-        dump($kitobject_families);
+
+
+        foreach ($arrListitems as $key => $value) {
+
+
+            // Interstate Condensed
+            if ($value['name'] != $fontname) {
+                dump(" ########### GOOGLE MATCH ########### " .  $fontname );
+
+
+                $Listitems = [
+                    'font' => $fontname,
+                    'class' => 'google',
+                    'weight' => $font_weight
+                ];
+
+
+                array_push($FontArray_Google, $Listitems);
+            }
+        return $FontArray;
+
+        }
+    }
+
+    public function FontArrayAdobe($kitobject_families , $fontname ,$font_weight){
+
+
+
+        $FontArray_Adobe = [];
+
+
         foreach ($kitobject_families as $key => $value) {
 
             //dump("VALUE");
@@ -260,7 +300,61 @@ class MyCustomController extends AbstractController
             dump( $value['name']  . " UND " .  $fontname);
             // ADOBE FONT
 
-            // Interstate Conde
+            // Interstate Condensed
+            if ($value['name'] === $fontname) {
+                dump(" ########### ADOBE MATCH ########### " .  $fontname );
+                $css_name = $value['css_names'][0];
+
+                $Listitems = [
+                    'font' => $css_name,
+                    'class' => 'adobe',
+                    'weight' => $font_weight
+                ];
+
+
+                array_push($FontArray_Adobe, $Listitems);
+            }
+        // Returns empty array if fontname is not in kitobject_families
+        return $FontArray;
+
+        }
+    }
+
+    public function createFontArray($kitobject_families , $fontname ,$font_weight){
+
+
+
+        $FontArray = [];
+        $FontArray_Google = [];
+        dump('kitobject_families');
+        dump($kitobject_families);
+
+        // [Interstate Condensed , Interstate]
+        // fontname = Interstate Condensed
+
+
+/*         $FontArray = [            $Listitems = [
+                'font' => interstate-condensed,
+                'class' => 'adobe',
+                'weight' => 400
+                ];
+           $Listitems = [
+                'font' => Interstate,
+                'class' => 'google',
+                'weight' => 400
+                ];
+        ]; */
+
+
+        foreach ($kitobject_families as $key => $value) {
+
+            //dump("VALUE");
+            //dump($value);
+
+            dump( $value['name']  . " UND " .  $fontname);
+            // ADOBE FONT
+
+            // Interstate Condensed
             if ($value['name'] === $fontname) {
                 dump(" ########### ADOBE MATCH ########### " .  $fontname );
                 $css_name = $value['css_names'][0];
@@ -273,10 +367,16 @@ class MyCustomController extends AbstractController
 
 
                 array_push($FontArray, $Listitems);
-            }
+            } /* else {
+                $Listitems = [
+                    'font' => $fontname,
+                    'class' => 'google',
+                    'weight' => $font_weight
+                ];
+            } */
 
         }
-        foreach ($kitobject_families as $key => $value) {
+/*         foreach ($kitobject_families as $key => $value) {
 
 
 
@@ -302,7 +402,7 @@ class MyCustomController extends AbstractController
 
 
 
-        }
+        } */
         dump('FontArray_Google');
         dump($FontArray_Google);
         return $FontArray;
@@ -371,5 +471,4 @@ class MyCustomController extends AbstractController
                 }
 
     }
-
 
