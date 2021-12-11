@@ -27,7 +27,7 @@ Für die Projektfindung wurde
 ### Wirtschaftlichkeit
 
 
-## ProjektAblauf
+# ProjektAblauf
 1. Meeting 1 - Konzeptionsmeeting / Teamgespräch
 - Brainstorming , Features
 - mögliche Features
@@ -74,17 +74,14 @@ xyz
 
 braucht :
 
-## Entwürfe / Designentscheidungen
+# Entwürfe / Designentscheidungen
 
 
-## Recherche
+# Recherche
 
+# Tools / Tech Stacks
 
-
-
-## Tools / Tech Stacks
-
-### Entwickler
+## Entwickler
 - MySQL Workbench
 - CONTAO CMS
 
@@ -94,7 +91,7 @@ braucht :
 - MariaDB
 - Nginx Webserver
 
-### Designer
+## Designer
 - Adobe XD
 
 
@@ -117,7 +114,7 @@ braucht :
     - Authentication / Password Protected Routes
 - MariaDB
 
-## Schnittstellen
+# Schnittstellen
 - font.abobe.com ( Kit Informationen)
 - fonts.google.com
 - use.typekit
