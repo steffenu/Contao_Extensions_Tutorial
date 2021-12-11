@@ -28,12 +28,12 @@ Für die Projektfindung wurde
 
 
 ## ProjektAblauf
-1.Meeting 1 - Konzeptionsmeeting / Teamgespräch
+1. Meeting 1 - Konzeptionsmeeting / Teamgespräch
 - Brainstorming , Features
 - mögliche Features
 - Anforderungen
 
-2.Meeting 2 - Entwurfsmeetings / Kundengespräch
+2. Meeting 2 - Entwurfsmeetings / Kundengespräch
 - Vorstellung des Entwurfs
 - Erfassung der Kundenanforderungen
 - Angebote , Upsell mögliche Features
