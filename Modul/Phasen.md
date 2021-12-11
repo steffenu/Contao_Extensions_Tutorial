@@ -62,8 +62,13 @@ Abnahme
 
 **KUNDENANFORDERUNGEN**
 
-Der Kunde (Lupcom möchte) :
+Der Kunde (Lupcom Media GmbH ) :
 
+möchte:
+SCHRIFTENTOOL :
+- 
+
+braucht :
 
 ## Entwürfe / Designentscheidungen
 
