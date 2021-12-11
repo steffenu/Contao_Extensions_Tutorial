@@ -53,9 +53,9 @@ Abnahme
 
 ---
 
-## Konzeption
+### Konzeption
 
-## Besprechungen / Meetings
+### Besprechungen / Meetings
 
 ### Meeting 1 - Konzeptionsmeeting / Teamgespräch
 - Besprechung zu
@@ -81,7 +81,7 @@ braucht :
 
 # Tools / Tech Stacks
 
-## Entwickler
+### Entwickler
 - MySQL Workbench
 - CONTAO CMS
 
@@ -91,14 +91,14 @@ braucht :
 - MariaDB
 - Nginx Webserver
 
-## Designer
+### Designer
 - Adobe XD
 
 
-## KOMMUNIKATION
+## Kommunikation
 - Microsoft Teams
 
-## TIME TRACKING
+## Time Tracking
 
 
 ### Tech Stacks(verwendete Technologien)
@@ -123,7 +123,7 @@ braucht :
 
 # Open Source Software
 
-## Bibliotheken
+### Bibliotheken
 https://github.com/av01d/fontpicker-jquery-plugin (orginal)
 https://github.com/steffenu/fontpicker-jquery-plugin (fork/modifikation)
 
