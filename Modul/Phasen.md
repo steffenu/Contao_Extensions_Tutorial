@@ -28,28 +28,28 @@ Für die Projektfindung wurde
 
 
 # ProjektAblauf
-1. Meeting 1 - Konzeptionsmeeting / Teamgespräch
+1. **Meeting 1 - Konzeptionsmeeting / Teamgespräch**
 - Brainstorming , Features
 - mögliche Features
 - Anforderungen
 
-2. Meeting 2 - Entwurfsmeetings / Kundengespräch
+2. **Meeting 2 - Entwurfsmeetings / Kundengespräch**
 - Vorstellung des Entwurfs
 - Erfassung der Kundenanforderungen
 - Angebote , Upsell mögliche Features
 - Nötige Seiten - Datenschutz , Impressum (alle Aufwände)
 
-3. Angepasster Entwurf
+3. **Angepasster Entwurf**
    - Konsultation / Abstimmung mit Kunde
 
-4. Anfertigung Lastenheft
+4. **Anfertigung Lastenheft**
 
 
-5.Technische Umsetzung
+5. **Technische Umsetzung**
     - Bau des Projekt nach Anforderungen Kunden
 
 
-Abnahme
+6. **Abnahme**
 
 ---
 
