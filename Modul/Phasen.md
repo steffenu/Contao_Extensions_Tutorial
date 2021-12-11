@@ -105,15 +105,19 @@ braucht :
 
 ### Bibliotheken
 https://github.com/av01d/fontpicker-jquery-plugin (orginal)
+
 https://github.com/steffenu/fontpicker-jquery-plugin (fork/modifikation)
 
 **PHP**
+
 https://github.com/mvpasarel/typekit-php (Typekit Api Wrapper)
 
 **JAVSCRIPT**
+
 https://github.com/typekit/webfontloader (Fügt Stylesheets zum HTML document hinzu)
 
 
 **CSS**
+
 https://tailwindcss.com/
 
