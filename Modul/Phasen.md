@@ -67,9 +67,10 @@ Abnahme
 Der Kunde (Lupcom Media GmbH ) :
 
 möchte:
+xyz
 
-SCHRIFTENTOOL :
-- 
+SCHRIFTENTOOL:
+xyz
 
 braucht :
 
