@@ -51,6 +51,8 @@ Für die Projektfindung wurde
 
 Abnahme
 
+---
+
 ## Konzeption
 
 ## Besprechungen / Meetings
@@ -65,6 +67,7 @@ Abnahme
 Der Kunde (Lupcom Media GmbH ) :
 
 möchte:
+
 SCHRIFTENTOOL :
 - 
 
@@ -120,7 +123,7 @@ braucht :
 - https://google-webfonts-helper.herokuapp.com/api/fonts
 - lokale font fileuploads
 
-### Open Source Software
+# Open Source Software
 
 ## Bibliotheken
 https://github.com/av01d/fontpicker-jquery-plugin (orginal)
