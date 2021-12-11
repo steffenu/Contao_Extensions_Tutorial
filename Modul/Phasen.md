@@ -1,25 +1,5 @@
 # Projekt Notizen
 
-In diesem Dokument möchte ich stichpunktartig Notieren
-welche :
-- Ressourcen erstellt / genutzt wurden
-  (Sketeches , Entwürfe ,) ..
-
-- Alle Versionen von Dateien bitte Zwischenspeichern / sammeln
-  (Präsentationszwecke)
-
-- Den groben Verlauf des Projekts
-  (Phasen / Entscheidungen / Änderungen)
-
-- Alle verwendeten Tools , Software , ggf time Tracking
-  Mitarbeiter
-
-- Vllt sowas wie ein Lastenheft bzw Notizen
-  um die Anforderungen des Kunden (Lupcom) festzuhalten
-  Für den Soll ist Vergleich usw
-
-
-
 
 ## Projektfindung
 Für die Projektfindung wurde
