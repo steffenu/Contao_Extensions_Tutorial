@@ -64,7 +64,7 @@ Für die Projektfindung wurde
 
 **KUNDENANFORDERUNGEN**
 
-Der Kunde (Lupcom Media GmbH ) :
+Der Kunde (XYZ GmbH ) :
 
 möchte:
 xyz
