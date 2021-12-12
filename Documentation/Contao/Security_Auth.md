@@ -134,3 +134,14 @@ This service let’s you query information of the Contao related security tokens
             if (null !== ($backendUsername = $this->tokenChecker->getBackendUsername())) { /* … */ }
         }
     }
+
+# Login Formular
+
+https://docs.contao.org/manual/de/layout/modulverwaltung/benutzermodule/
+
+Für die Anmeldung im ``Frontend`` kann das standart Login formular genutzt werden.
+
+Dies ist als Frontend Modul in einer gewählten Seite einzubinden.
+
+Im Backend beim Aufrufen einer geschützen Route kommt geschiet automatisch
+eine Login Abfrage.

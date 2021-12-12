@@ -106,3 +106,11 @@ Sofern du Zugriff auf deinen eigenen Server hast
 2. Lass dein  Javscript den request zu deiner Route machen (dann ist es same origin)
 somit hast du dann die Daten ;)
 
+## Alternative Lösung
+
+(nur empfohlen sofern dir egal ist ob third party den datenverkehr leitet)
+
+
+Benutze ein third party service um den request auszuführen
+
+https://allorigins.win/
