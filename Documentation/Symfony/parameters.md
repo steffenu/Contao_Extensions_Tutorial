@@ -54,6 +54,7 @@ https://symfony.com/doc/current/cloud/cookbooks/env.html#accessing-environment-v
 ## Schritt 1
 
     in your .env file
+    .env (with a leading dot) file located at the root of your project.
     APP_PARAM=paramvaluehere
 
 ## Schritt 2
