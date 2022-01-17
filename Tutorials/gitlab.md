@@ -18,6 +18,15 @@ diesen auch in der Ordner kopieren.
 
 ## Repo in Gitlab anegen
 
+git init
+git config --local user.name "sunger"
+git config --local user.email "steffen.unger@lupcom.org"
+git add .
+git commit -m "update"
+git branch -M master
+git remote add origin "git@gitlab.lupcom.de:contao-bundles/fontpreview-bundle.git"
+git push -u origin master
+
 
 # Schritt 1
 
@@ -33,8 +42,8 @@ git remote add origin git@gitlab.lupcom.de:sunger/lupcom-starter-bundle.git
 
 **Lokale Git Settings**
 
-git config --local user.name "yourname"
-git config --local user.email "yourmail"
+git config --local user.name "sunger"
+git config --local user.email "steffen.unger@lupcom.org"
 
 
 # Schritt 3
@@ -77,3 +86,10 @@ git remote rename origin old-origin
 git remote add origin git@gitlab.lupcom.de:sunger/lupcom-starter-bundle.git
 git push -u origin --all
 git push -u origin --tags
+
+
+# Als Maintainer hinzufügen
+
+Sofern man ein Bundle runterläd
+und dann versucht zu pushen geht dies nicht.
+Sofern man nicht als Maintainer eingetragen ist.

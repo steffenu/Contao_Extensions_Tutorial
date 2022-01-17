@@ -34,6 +34,33 @@ bei github heisst ;)
 
 ![](https://i.imgur.com/Ww4AB32.png)
 
+## Installation via Packeton
+
+### Schritt 1
+
+Paket auf Gitlab Hochalden
+
+### Schritt 2
+
+Packet in Packeton auswählen und submitten
+
+
+## In der Dev umgebung arbeiten 
+
+    "lupcom/fontpreview-bundle": "dev-master"
+
+1.Bei require dein paket eintragen ( den dev master branch nutzen)
+2. In Gitlab als Maintainer für dein Paket eingetragen sein.
+3. Nun kannst du das Paket runterladen und auch im Vendor
+   ordner bearbeiten und pushen zum master branch.
+4. Dann kannst du composer update lupcom/fontpreview-bundle ausführen
+   und hast somit die neuste version die du bearbeitet hast wieder
+   durch das composer upadte installiert ... inkl cache clears und updated
+   dependencies für twig usw.
+
+
+
+
 ## Installation via Github
 
 **Anmerkung**
