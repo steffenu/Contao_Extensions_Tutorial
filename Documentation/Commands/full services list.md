@@ -1,4 +1,3 @@
-
 vendor/bin/contao-console debug:container
 
       doctrine.dbal.connection.event_manager                                                              Symfony\Bridge\Doctrine\ContainerAwareEventManager                                                       

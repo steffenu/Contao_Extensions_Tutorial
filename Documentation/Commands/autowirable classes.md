@@ -1,4 +1,3 @@
-vendor/bin/contao-console debug:autowiring --all
 
 
     

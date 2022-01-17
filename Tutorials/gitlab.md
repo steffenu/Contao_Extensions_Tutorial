@@ -50,7 +50,9 @@ git config --global user.email "steffen.unger@lupcom.org"
 
 
 
-git@gitlab.lupcom.de:contao-bundles/schriftentool.git
+
+git remote add origin git@gitlab.lupcom.de:contao-bundles/schriftentool.git
+git push -u origin master
 
 Create a new repository
 git clone git@gitlab.lupcom.de:sunger/lupcom-starter-bundle.git
