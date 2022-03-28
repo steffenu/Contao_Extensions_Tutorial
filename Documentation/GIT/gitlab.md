@@ -4,7 +4,7 @@
 
 ssh-keygen -t rsa -b 4096
 
-die dateien dan nin den .ssh ordner kopieren
+die Dateien  in den .ssh ordner kopieren
 
 in der .pub datei ist der public key ... diesen mit text editor öffen und 
 in gitlab einfügen

@@ -3,8 +3,8 @@ Auf Port 80 lief ein apache server
 der wohl irgendwie mitinstalliert wurde.
 
 
-sudo service apache2 status
-sudo service apache2 stop
+`sudo service apache2 status`
+`sudo service apache2` stop
 
 sudo lsof -i -P -n | grep LISTEN
 
